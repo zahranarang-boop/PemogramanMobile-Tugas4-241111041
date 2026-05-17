@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kendaraiin</string>
+    <string name="welcome_message">Selamat Datang di Kendaraiin</string>
+    <string name="menu_mobil">Sewa Mobil</string>
+    <string name="menu_motor">Sewa Motor</string>
+    <string name="menu_admin">Dashboard Admin</string>
+    <string name="desc_mobil">Berbagai pilihan mobil keluarga dan mewah.</string>
+    <string name="desc_motor">Motor lincah untuk perjalanan dalam kota.</string>
+    <string name="desc_admin">Kelola penyewaan dan armada kendaraan.</string>
+</resources>
