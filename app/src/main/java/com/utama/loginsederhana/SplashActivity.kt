@@ -11,10 +11,16 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        // Delay selama 3 detik sebelum pindah ke LoginActivity
+        val sessionManager = SessionManager(this)
+
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
+            if (sessionManager.isLoggedIn()) {
+                // Jika sudah login, langsung ke MainActivity
+                startActivity(Intent(this, MainActivity::class.java))
+            } else {
+                // Jika belum, ke LoginActivity
+                startActivity(Intent(this, LoginActivity::class.java))
+            }
             finish()
         }, 3000)
     }
